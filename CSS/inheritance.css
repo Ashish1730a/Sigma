@@ -1,0 +1,23 @@
+div{
+    background-color: #C3B59C;
+}
+
+input{
+    background-color:#2E3D34;
+    color: whitesmoke;
+}
+button{
+    background-color: inherit;
+}
+button:hover{
+    background-color: aquamarine;
+}
+h2{
+    background-color: #545A4D;
+}
+p{
+    background-color: #68623A;
+}
+h1{
+    background-color: #C3B59C;
+}

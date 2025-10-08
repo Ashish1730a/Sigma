@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini whatsapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>All Chats!!</h3>
+    <form action="chats/new" method="GET">
+        <button style="background-color: #B6CEB4; border: 1px solid #D9E9CF; ">New Chat</button>
+    </form>
+    <br>
+
+
+
+    <% for(let chat of chats){ %>
+<div class="chat">
+    
+    <h4>
+        From: <i><%= chat.from %></i>
+    </h4>
+    <div class="msg">
+        <p>
+            <%= chat.message %>
+            <form action="/chats/<%= chat._id %>/edit" method="get">
+                <button style="background-color: #B6CEB4; border: 1px solid #D9E9CF; ">edit</button>
+            </form>
+            <br>
+            <form action="/chats/<%= chat._id %>/?_method=DELETE" method="post">
+                <button style="background-color: #B6CEB4; border: 1px solid #D9E9CF; ">delete</button>
+            </form>
+            <form action="/chats/<%= chat._id %>" method="GET">
+                <button>Show</button>
+            </form>
+        </p>
+    </div>
+    <h4> Received by: <i><%= chat.to %></i>
+    </h4>
+    <hr style="border: 1px solid #96A78D;">
+    <p><%= chat.created_at.toString().split(" ")[4] %></p>
+    <p> <%= chat.created_at.toString().split(" ").slice(0,4).join(" ") %> </p>
+</div>
+<br>
+<% } %>
+</body>
+
+</html>
+

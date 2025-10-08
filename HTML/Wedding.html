@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation - Ashish & Divyanka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #fff5f5;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('https://images.unsplash.com/photo-1604537466158-719b1972feb8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                        url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .header h1 {
+            font-size: 3.5em;
+            color: #d32f2f;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: 'Great Vibes', cursive;
+            position: relative;
+            z-index: 2;
+        }
+
+        .couple-names {
+            font-size: 4em;
+            color: #c2185b;
+            margin: 20px 0;
+            font-family: 'Dancing Script', cursive;
+            position: relative;
+            z-index: 2;
+        }
+
+        .event-card {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .event-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #d32f2f, #c2185b);
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-card h2 {
+            color: #d32f2f;
+            margin-bottom: 15px;
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+        }
+
+        .event-card p {
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .date-time {
+            font-size: 1.2em;
+            color: #c2185b;
+            font-weight: bold;
+        }
+
+        .venue {
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .dress-code {
+            background: #ffebee;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: inline-block;
+        }
+
+        .rsvp-button {
+            background: #d32f2f;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rsvp-button:hover {
+            background: #b71c1c;
+        }
+
+        .floral-border {
+            border: 2px solid #ffcdd2;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            position: relative;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .floral-border::before,
+        .floral-border::after {
+            content: '❀';
+            position: absolute;
+            font-size: 24px;
+            color: #d32f2f;
+        }
+
+        .floral-border::before {
+            top: -10px;
+            left: 20px;
+        }
+
+        .floral-border::after {
+            bottom: -10px;
+            right: 20px;
+        }
+
+        .event-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cultural-elements {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .cultural-element {
+            width: 60px;
+            height: 60px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.8;
+        }
+
+        .blessing-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.5em;
+            color: #c2185b;
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+        }
+
+        .kolam {
+            width: 100%;
+            height: 100px;
+            background-image: url('https://www.transparentpng.com/thumb/kolam/kolam-png-pictures-5.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 20px 0;
+            opacity: 0.8;
+        }
+
+        .cultural-quote {
+            font-style: italic;
+            color: #d32f2f;
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.2em;
+        }
+
+        .event-details {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .family-section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .family-title {
+            text-align: center;
+            color: #d32f2f;
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .families-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .family-card {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .family-name {
+            color: #c2185b;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .family-member {
+            margin: 10px 0;
+            padding: 5px;
+            border-bottom: 1px solid #ffcdd2;
+        }
+
+        .family-member:last-child {
+            border-bottom: none;
+        }
+
+        .family-relation {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+
+        .family-blessing {
+            font-style: italic;
+            color: #666;
+            margin-top: 15px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+            .couple-names {
+                font-size: 3em;
+            }
+            .families-container {
+                flex-direction: column;
+            }
+            .family-card {
+                min-width: 100%;
+            }
+        }
+
+        .welcome-section {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                        url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .couple-photo {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            border: 5px solid #d32f2f;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .love-quote {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8em;
+            color: #c2185b;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .about-section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .about-title {
+            text-align: center;
+            color: #d32f2f;
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .love-story {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #d32f2f;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 40px 0;
+            width: 50%;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            padding-right: 40px;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-left: 40px;
+        }
+
+        .timeline-date {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+
+        .gallery-section {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .guestbook-section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .wish-form {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .wish-input {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ffcdd2;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        .emoji-reactions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .emoji-button {
+            font-size: 24px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .emoji-button:hover {
+            transform: scale(1.2);
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .countdown-item {
+            text-align: center;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .countdown-number {
+            font-size: 2em;
+            color: #d32f2f;
+            font-weight: bold;
+        }
+
+        .countdown-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 25px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .music-player button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #d32f2f;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 30px;
+            }
+            .timeline-item {
+                width: 100%;
+                left: 0 !important;
+                padding-left: 70px !important;
+                padding-right: 20px !important;
+            }
+        }
+
+        .rituals-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .rituals-title {
+            text-align: center;
+            color: #d32f2f;
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .rituals-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .ritual-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ritual-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #d32f2f, #c2185b);
+        }
+
+        .ritual-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ritual-icon {
+            font-size: 2em;
+            color: #d32f2f;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .ritual-name {
+            color: #c2185b;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .ritual-description {
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .ritual-phase {
+            text-align: center;
+            color: #d32f2f;
+            font-size: 1.5em;
+            margin: 30px 0 20px;
+            font-family: 'Great Vibes', cursive;
+        }
+
+        .ritual-divider {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #d32f2f, transparent);
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .rituals-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <h1 class="header-title">Welcome to Our Wedding</h1>
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ashish & Divyanka" class="couple-photo">
+            <div class="couple-names">
+                Ashish ❤️ Divyanka
+            </div>
+            <p class="love-quote">"In your eyes, I found my home. In your heart, I found my love. In your soul, I found my forever."</p>
+        </div>
+
+        <!-- Countdown Timer -->
+        <div class="countdown">
+            <div class="countdown-item">
+                <div class="countdown-number" id="days">00</div>
+                <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="hours">00</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="minutes">00</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="seconds">00</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <div class="about-section">
+            <h2 class="about-title">Our Love Story</h2>
+            <div class="love-story">
+                <p>Our journey began in the most unexpected way. Ashish and Divyanka first met at a mutual friend's gathering in 2020. What started as a casual conversation turned into endless talks about life, dreams, and everything in between. After two beautiful years of friendship, love blossomed naturally, and here we are, ready to begin our forever together.</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <h3>First Meeting</h3>
+                    <p>Where it all began at a friend's gathering</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021</div>
+                    <h3>Friendship</h3>
+                    <p>Building beautiful memories together</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <h3>Love</h3>
+                    <p>When friendship turned into something more</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <h3>Proposal</h3>
+                    <p>The magical moment when he asked the question</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <h3>Wedding</h3>
+                    <p>Beginning our forever together</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="gallery-section">
+            <h2 class="about-title">Our Moments</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="First Date">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1587271339318-2e5b2f6c1102?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proposal">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1609167830220-7164aa360951?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Engagement">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1583939411023-14c0ae576690?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pre-wedding">
+                </div>
+            </div>
+        </div>
+
+        <!-- Guestbook Section -->
+        <div class="guestbook-section">
+            <h2 class="about-title">Send Your Wishes</h2>
+            <div class="wish-form">
+                <input type="text" class="wish-input" placeholder="Your Name">
+                <textarea class="wish-input" rows="4" placeholder="Your Message"></textarea>
+                <div class="emoji-reactions">
+                    <span class="emoji-button">❤️</span>
+                    <span class="emoji-button">😂</span>
+                    <span class="emoji-button">😍</span>
+                    <span class="emoji-button">🎉</span>
+                </div>
+                <button class="rsvp-button" onclick="submitWish()">Send Wishes</button>
+            </div>
+        </div>
+
+        <!-- Music Player -->
+        <div class="music-player">
+            <button onclick="toggleMusic()">
+                <i class="fas fa-music"></i>
+            </button>
+        </div>
+
+        <div class="blessing-text">
+            "வாழ்க வளமுடன்" (Long live with prosperity)
+        </div>
+
+        <div class="cultural-quote">
+            "A marriage is not just a union of two souls, but a celebration of two families coming together in harmony"
+        </div>
+
+        <div class="kolam"></div>
+
+        <div class="cultural-elements">
+            <div class="cultural-element" style="background-image: url('https://www.transparentpng.com/thumb/om-symbol/om-symbol-png-pictures-5.png')"></div>
+            <div class="cultural-element" style="background-image: url('https://www.transparentpng.com/thumb/kolam/kolam-png-pictures-5.png')"></div>
+            <div class="cultural-element" style="background-image: url('https://www.transparentpng.com/thumb/om-symbol/om-symbol-png-pictures-5.png')"></div>
+        </div>
+
+        <div class="floral-border">
+            <div class="event-card">
+                <h2>Haldi Ceremony</h2>
+                <img src="https://images.unsplash.com/photo-1592661475003-9a452c2c2832?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Haldi Ceremony" class="event-image">
+                <div class="event-details">
+                    <p class="date-time">Date: 15th December 2024</p>
+                    <p class="venue">Venue: Thakur Residence, Chennai</p>
+                    <p class="dress-code">Dress Code: Yellow Traditional Attire</p>
+                    <p>Join us for the auspicious Haldi ceremony as we begin our wedding celebrations</p>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <h2>Engagement Ceremony</h2>
+                <img src="https://images.unsplash.com/photo-1630526720753-aa4e71acf67d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Engagement Ceremony" class="event-image">
+                <div class="event-details">
+                    <p class="date-time">Date: 16th December 2024</p>
+                    <p class="venue">Venue: Grand Hotel, Chennai</p>
+                    <p class="dress-code">Dress Code: Traditional South Indian Attire</p>
+                    <p>Celebrate the formal engagement of Ashish and Divyanka with traditional South Indian customs</p>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <h2>Wedding Ceremony</h2>
+                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Wedding Ceremony" class="event-image">
+                <div class="event-details">
+                    <p class="date-time">Date: 17th December 2024</p>
+                    <p class="venue">Venue: Royal Palace Gardens, Chennai</p>
+                    <p class="dress-code">Dress Code: Traditional South Indian Wedding Attire</p>
+                    <p>Witness the sacred union of two souls in holy matrimony with traditional South Indian rituals</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cultural-quote">
+            "May your love be as eternal as the stars and as pure as the morning dew"
+        </div>
+
+        <div class="blessing-text">
+            "ॐ सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः। सर्वे भद्राणि पश्यन्तु मा कश्चिद्दुःखभाग्भवेत्।"
+        </div>
+
+        <div class="family-section">
+            <h2 class="family-title">Our Families</h2>
+            <div class="families-container">
+                <div class="family-card">
+                    <h3 class="family-name">Thakur Family</h3>
+                    <div class="family-member">
+                        <span class="family-relation">Parents</span><br>
+                        Mr. Rajesh Thakur & Mrs. Priya Thakur
+                    </div>
+                    <div class="family-member">
+                        <span class="family-relation">Grandparents</span><br>
+                        Late Mr. Ram Thakur & Mrs. Sita Thakur
+                    </div>
+                    <div class="family-member">
+                        <span class="family-relation">Siblings</span><br>
+                        Rahul Thakur (Brother)<br>
+                        Priyanka Thakur (Sister)
+                    </div>
+                    <div class="family-member">
+                        <span class="family-relation">Uncles & Aunts</span><br>
+                        Mr. Amit Thakur & Mrs. Neha Thakur<br>
+                        Mr. Sunil Thakur & Mrs. Ritu Thakur
+                    </div>
+                    <p class="family-blessing">"May your union be blessed with eternal happiness and prosperity"</p>
+                </div>
+
+                <div class="family-card">
+                    <h3 class="family-name">Divyanka's Family</h3>
+                    <div class="family-member">
+                        <span class="family-relation">Parents</span><br>
+                        Mr. Arun Kumar & Mrs. Meera Kumar
+                    </div>
+                    <div class="family-member">
+                        <span class="family-relation">Grandparents</span><br>
+                        Late Mr. Krishna Kumar & Mrs. Lakshmi Kumar
+                    </div>
+                    <div class="family-member">
+                        <span class="family-relation">Siblings</span><br>
+                        Aditya Kumar (Brother)<br>
+                        Anjali Kumar (Sister)
+                    </div>
+                    <div class="family-member">
+                        <span class="family-relation">Uncles & Aunts</span><br>
+                        Mr. Rajesh Kumar & Mrs. Sunita Kumar<br>
+                        Mr. Vikram Kumar & Mrs. Pooja Kumar
+                    </div>
+                    <p class="family-blessing">"May your journey together be filled with love, joy, and divine blessings"</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <button class="rsvp-button" onclick="showRSVPForm()">RSVP</button>
+        </div>
+
+        <!-- Rituals Section -->
+        <div class="rituals-section">
+            <h2 class="rituals-title">Wedding Rituals & Ceremonies</h2>
+            
+            <h3 class="ritual-phase">Pre-Wedding Rituals</h3>
+            <div class="rituals-container">
+                <div class="ritual-card">
+                    <div class="ritual-icon">🌿</div>
+                    <h3 class="ritual-name">Roka Ceremony</h3>
+                    <p class="ritual-description">The first official union of both families, exchanging gifts, sweets, and blessings.</p>
+                </div>
+                <div class="ritual-card">
+                    <div class="ritual-icon">💍</div>
+                    <h3 class="ritual-name">Engagement (Sagai)</h3>
+                    <p class="ritual-description">Exchange of rings between the bride and groom, celebrated with music and dance.</p>
+                </div>
+                <div class="ritual-card">
+                    <div class="ritual-icon">✨</div>
+                    <h3 class="ritual-name">Haldi Ceremony</h3>
+                    <p class="ritual-description">Turmeric paste applied to bring glow and positivity before the wedding.</p>
+                </div>
+                <div class="ritual-card">
+                    <div class="ritual-icon">🎨</div>
+                    <h3 class="ritual-name">Mehendi Ceremony</h3>
+                    <p class="ritual-description">Intricate henna designs on hands and feet, symbolizing love and prosperity.</p>
+                </div>
+                <div class="ritual-card">
+                    <div class="ritual-icon">🎵</div>
+                    <h3 class="ritual-name">Sangeet Ceremony</h3>
+                    <p class="ritual-description">A musical night with family performances and joyful celebrations.</p>
+                </div>
+                <div class="ritual-card">
+                    <div class="ritual-icon">🕉️</div>
+                    <h3 class="ritual-name">Ganesh Puja</h3>
+                    <p class="ritual-description">Worshipping Lord Ganesha for blessings before the wedding.</p>
+                </div>
+            </div>
+
+            <div class="ritual-divider"></div>
+
+            <h3 class="ritual-phase">Wedding Day Rituals</h3>
+            <div class="rituals-container">
+                <div class="ritual-card">
+                    <div class="ritual-icon">🐎</div>
+                    <h3 class="ritual-name">Baraat</h3>
+                    <p class="ritual-description">The groom's grand procession to the wedding venue.</p>
+                </div>
+                <div class="ritual-card">
+                    <div class="ritual-icon">💐</div>
+                    <h3 class="ritual-name">Jaimala</h3>
+                    <p class="ritual-description">Exchange of garlands as a symbol of acceptance.</p>
+                </div>
+                <div class="ritual-card">
+                    <div class="ritual-icon">👐</div>
+                    <h3 class="ritual-name">Kanyadaan</h3>
+                    <p class="ritual-description">The emotional moment of giving away the bride.</p>
+                </div>
+                <div class="ritual-card">
+                    <div class="ritual-icon">🔥</div>
+                    <h3 class="ritual-name">Mangal Pheras</h3>
+                    <p class="ritual-description">Seven sacred circles around the holy fire.</p>
+                </div>
+                <div class="ritual-card">
+                    <div class="ritual-icon">💫</div>
+                    <h3 class="ritual-name">Sindoor & Mangalsutra</h3>
+                    <p class="ritual-description">Applying vermilion and tying the sacred necklace.</p>
+                </div>
+                <div class="ritual-card">
+                    <div class="ritual-icon">👣</div>
+                    <h3 class="ritual-name">Saptapadi</h3>
+                    <p class="ritual-description">Seven steps together, making lifelong promises.</p>
+                </div>
+            </div>
+
+            <div class="ritual-divider"></div>
+
+            <h3 class="ritual-phase">Post-Wedding Rituals</h3>
+            <div class="rituals-container">
+                <div class="ritual-card">
+                    <div class="ritual-icon">👋</div>
+                    <h3 class="ritual-name">Vidai</h3>
+                    <p class="ritual-description">The bride's farewell ceremony from her home.</p>
+                </div>
+                <div class="ritual-card">
+                    <div class="ritual-icon">🏠</div>
+                    <h3 class="ritual-name">Griha Pravesh</h3>
+                    <p class="ritual-description">The bride's welcome at her new home.</p>
+                </div>
+                <div class="ritual-card">
+                    <div class="ritual-icon">🎊</div>
+                    <h3 class="ritual-name">Reception</h3>
+                    <p class="ritual-description">Grand celebration with family and friends.</p>
+                </div>
+                <div class="ritual-card">
+                    <div class="ritual-icon">🔄</div>
+                    <h3 class="ritual-name">Pag Phera</h3>
+                    <p class="ritual-description">The bride's first visit to her parents' home.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const weddingDate = new Date('2024-12-17').getTime();
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Music Player
+        let isPlaying = false;
+        function toggleMusic() {
+            isPlaying = !isPlaying;
+            // Add your music player logic here
+            alert('Music player functionality will be implemented here');
+        }
+
+        // Guestbook
+        function submitWish() {
+            alert('Thank you for your wishes! They will be displayed on our wedding day.');
+        }
+
+        // Add animation to event cards on scroll
+        window.addEventListener('scroll', function() {
+            const cards = document.querySelectorAll('.event-card');
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (cardTop < windowHeight * 0.8) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Add parallax effect to background
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            document.body.style.backgroundPositionY = -(scrolled * 0.5) + 'px';
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,51 @@
+#container{
+    height: 300px;
+    width: 60%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start ;
+    /* flex-wrap: wrap; */
+    /* align-items: baseline; */
+    /* align-content: center; */
+    /* align-content: space-evenly; */
+    align-content:flex-start;
+}
+#orang{
+    /* align-self: center; */
+    /* flex-basis: 50px; */
+    /* flex-grow: 1; */
+    flex-grow: 2;
+    
+}
+/* Flex shorthand */
+
+/* 1. flex-grow|flex-shink|flex-basis */
+
+/* 2. flex-grow|flex-basis */
+
+/* 3. flex-grow(unitless) */
+
+/* 4. flex-basis */
+
+#blue{
+    /* flex-basis: 400px; */
+    /* flex-grow: 2;
+    max-width: 400px; */
+    flex: 2 2 100px;
+}
+
+
+h1{
+    text-align: center;
+}
+
+#container div{
+    height: 100px;
+    width: 50px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

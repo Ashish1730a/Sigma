@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    font-weight: 900;
+    text-decoration: line-through;
+    text-decoration-color: black;
+    text-decoration-style: double ;
+    letter-spacing: 3px;
+    font-family: impact;
+}
+h3{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+p{
+    text-align: end;
+    font-weight: normal;
+    line-height: 2.2;
+    font-family: Brush Script MT;
+}
+h2{
+    font-weight: 900;
+    text-decoration: overline;
+    text-decoration-color: brown;
+    text-decoration-style: double;
+    font-family: Arial Black;
+}
+a{
+    text-decoration: none;
+}

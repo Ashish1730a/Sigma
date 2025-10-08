@@ -1,0 +1,108 @@
+/* universal Selector */
+/* To select everything in a document */
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Element Selector */
+/* Selects all elements of the same type */
+h3{
+    color: purple;
+}
+h1{
+    color: #b92b27;
+}
+/* ID Selector */
+/* Selects an element based on the value of the element's attribute */
+#login{
+    background-color: white;
+}
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+/* Class Selector */
+/* Selects an elements based on their class attribute */
+.upvote{
+    background-color: green;
+    color: aliceblue;
+}
+/* descendant selector */
+/* Select all a inside p */
+p a{
+    color:purple;
+    background-color: yellow;
+}
+nav a{
+    color: pink;
+}
+/* Adjacent Sibling Combinator */
+/* Heading that comes immediately after any paragrapgh */
+p+h3{
+    text-decoration: underline;
+}
+.upvote + button{
+    background-color: blueviolet;
+    color: antiquewhite;
+} 
+/* Child Combinator */
+/* Child relation */
+/* Selects all buttons which are direct children of spans */
+div>input{
+    background-color: darkgray;
+    color: aliceblue;
+}
+/* Attribute Selector */
+/* Selects elements based on the presence or value of a given attribute */
+input[type="text"]{
+    color: red;
+}
+input[type="password"]{
+    color: green;
+}
+input[type]{
+    background-color: ghostwhite;
+}
+/* Pseudo Class */
+/* A keyword added to selector tnat specifies a special state of the selected elements */
+
+
+/* hover pseudo class*/
+button:hover{
+    background-color: palevioletred;
+}
+h3:hover{
+    text-decoration: none;
+}
+/* active pseudo class */
+button:active{
+    background-color: darkred;
+}
+p:active{
+    font-weight: bold;
+    color: green;
+}
+/* checked pseudo class */
+input[type="radio"]:checked+label{
+    color: #b92b27;
+    font-weight: bold;
+}
+/* nth of tyoe pseudo class */
+div:nth-of-type(3n){
+    background-color: rgb(149, 144, 144);
+}
+/* Pseudo Element */
+/* A keyword added to a selector that lets you style a specific part of the of the selected element(s) */
+/* 1- First letter */
+h1::first-letter{
+    color: aquamarine;
+}
+/* 2- first line */
+p::first-line{
+    color: red;
+}
+/* 3- Selection */
+p::selection{
+    background-color: blanchedalmond;
+}
+/* Selector Specificity */
+/*  ID  >  Class  >  Element*/

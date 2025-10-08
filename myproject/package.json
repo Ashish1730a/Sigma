@@ -1,0 +1,19 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "This is first project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashish ji",
+  "license": "ISC",
+  "dependencies": {
+    "a": "^4.0.0",
+    "figlet": "^1.8.2",
+    "give": "^2.0.0",
+    "give-me-a-joke": "^0.5.1",
+    "joke": "^0.0.1-1",
+    "me": "^0.3.0"
+  }
+}
