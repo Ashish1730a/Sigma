@@ -30,6 +30,16 @@ const customerSchema = new Schema({
     ],
 })
 
+// customerSchema.pre("findOneAndDelete", async () => {
+//     console.log("Pre middleware");
+// })
+
+customerSchema.post("findOneAndDelete", async (customer) => {
+    if(customer.orders.length) {
+        let res= await Order.deleteMany({ _id: {$in: customer.orders}})
+        console.log(res);
+    }
+})
 
 const Order = mongoose.model("Order", orderSchema);
 const Customer = mongoose.model("Customer", customerSchema)
@@ -39,7 +49,33 @@ const findCustomer = async () => {
     console.log(result[0]);
 };
 
-findCustomer();
+// findCustomer();
+
+const addCust = async () => {
+    let newCust = new Customer({
+        name: "Karan Arjun",
+
+    })
+    let newOrder = new Order({
+        item: "Burger",
+        price: 250
+    })
+
+    newCust.orders.push(newOrder)
+    await newOrder.save();
+    await newCust.save();
+
+    console.log("Added new customer")
+}
+// addCust()
+
+const deltCust = async () => {
+    let id = '68ea2ec7e16ad8dbb5550006';
+    let data = await Customer.findByIdAndDelete(id)
+    console.log(data);
+
+}
+deltCust();
 
 // const addOrders = async () => {
 //     let res =await Order.insertMany([
@@ -52,3 +88,5 @@ findCustomer();
 // }
 
 // addOrders();
+
+
