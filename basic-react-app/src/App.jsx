@@ -1,11 +1,26 @@
 import "./App.css"
 // import
-import Title from "./Title.jsx";
+import Button from "./Button"        
+
 import ProductTab  from "./ProductTab.jsx";
 
 
+// function App() {
+//   return (
+//     <>
+//     <h2>Blockbuster Deals | Shop Now</h2>
+//       <ProductTab/>
+//     </>
+//   )
+// }
+
 function App() {
-  return <ProductTab/>
+  return (
+    <>
+      <Button/>
+    </>
+  )
 }
+
 
 export default App
