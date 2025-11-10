@@ -3,6 +3,7 @@ import "./App.css"
 import Button from "./Button"        
 
 import ProductTab  from "./ProductTab.jsx";
+import Form from "./Form.jsx";
 
 
 // function App() {
@@ -17,7 +18,7 @@ import ProductTab  from "./ProductTab.jsx";
 function App() {
   return (
     <>
-      <Button/>
+      <Form/>
     </>
   )
 }
