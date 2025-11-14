@@ -2,7 +2,7 @@ import { useState } from "react"
 
 export function LudoBoard() {
     let [moves, setMoves ] = useState({blue: 0, red: 0, yellow: 0, green: 0});
-    let [arr, setArr] = useState(["no moves"]);
+    let [arr, setArr] = useState([" moves add "]);
     
     let updateBlue =() => {
         // console.log(`moves.blue = ${moves.blue}`);
@@ -11,7 +11,7 @@ export function LudoBoard() {
         // });
 
         // arr.push("blue moves");
-        setArr(...arr, "blue");
+        setArr([...arr, "blue moves "]);
         console.log(arr);
         
     }
