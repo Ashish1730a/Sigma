@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+
+.box {
+    @apply bg-gray-300 text-white
+}
